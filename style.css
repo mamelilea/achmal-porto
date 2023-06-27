@@ -1,0 +1,727 @@
+footer > * :not(.excluded){
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+html {
+    overflow-x: hidden;
+    
+}
+html body {
+    overflow-x: hidden;
+}
+
+hr {
+    width: 50px;
+    border: 2px solid black;
+}
+
+h2 {
+        font-size: 6vh;
+        text-align: center;
+}
+
+/* ini bagian heading */
+
+.heading {
+    width: 100%;
+    height: 600px;
+    background-image: var(--bs-gradient);
+    background-color: rgb(176, 172, 172);
+    background-image: url(aset/tes2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: -0px -50px;
+    overflow: hidden;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    height: 600px;
+    width: 100%;
+    }
+
+.fotoheading {
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border: 3px solid black;
+margin-top: 150px;
+z-index: 1;
+position: relative;
+overflow-x: hidden;
+}
+
+.heading h1 {
+color: white;
+text-shadow: 1px 1px 5px black;
+z-index: 1;
+position: relative;
+transition: .5s;
+-webkit-transition: .5s;
+-moz-transition: .5s;
+-ms-transition: .5s;
+-o-transition: .5s;
+}
+
+.heading p {
+color: white;
+text-shadow: 1px 1px 100px;
+z-index: 1;
+position: relative;
+}
+
+
+
+
+/* bagian info panel */
+.info-panel1 {
+    z-index: 999999;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    justify-content: center;
+}
+
+.info-panel .icon1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+
+.info-panel img {
+    width: 100px;
+    text-align: center;
+}
+
+.ikonpanel {
+    position: relative;
+    left: 120px;
+}
+
+.info-panel h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #ACACAC;
+    text-align: center;
+}
+
+
+/* ini bagian home */
+.home {
+    height: 480px;
+    margin: 100px 0;
+    padding: 80px;
+}
+
+.home p {
+    text-align: center;
+}
+
+
+/* ini bagian profile */
+.profile {
+    background-color: rgb(241, 241, 241);
+    height: 580px;
+    padding-top: 90px;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+
+.row .col .icon {
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 11vh ;
+}
+
+.ikon1 {
+    margin: 50px;
+}
+
+.ikon2   {
+    margin: 50px;
+}
+
+/* ini bagian photo */
+.photo h2 {
+    padding-top: 100px;
+}
+
+/* ini bagian contact */
+.contact {
+    height: 600px;
+    background-color: rgb(241, 241, 241);
+    padding-top: 80px;
+}
+
+.sosmed ul {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.sosmed ul li {
+    text-align: center;
+    list-style: none;
+    position: relative;
+    margin: 10px auto;
+    right: 15px;
+    bottom: 50px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #666;
+    border: 3px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.emaildll {
+    display: flex;
+    position: relative;
+
+}
+
+/* ini bagian address */
+
+.address {
+    width: 100%;
+    height: 700px;
+    padding-top: 80px;
+}
+.alamat {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* ini bagian memory */
+.bagiancarousel {
+    padding-top: 80px;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 100px;
+}
+
+/* ini bagian testimoni */
+.testimoni {
+    background-color: white ;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 130px;
+    margin-bottom: 130px;
+}
+.bagianquotes {
+    font-style: italic;
+}
+.testimoni figure img {
+    width: 60px;
+    margin: 20px 10px;
+    opacity: 0.6;
+}
+.testimoni figure img.utama {
+    width: 100px;
+    opacity: 1;
+    margin-top: 5px;
+}
+.testimoni figure h5 {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: normal;
+}
+.testimoni figure span {
+    font-size: 12px;
+    color: #ACACAC;
+}
+
+
+/* bagian send */
+.send {
+    height: 800px;
+    background-color: rgb(241, 241, 241) ;
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+.card-body {
+    background-color: #0d6efd;
+    margin-top: 100px;
+}
+
+.isisend {
+    margin-top: 100px;
+}
+
+
+
+/* bagian footer */
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(28, 27, 33);;
+    width: 100%;
+    font-size: 16px;
+    height: max-content;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "left center right";
+    grid-template-columns: 1fr 1fr 1.2fr;
+}
+
+.footer-left {
+    margin: 50px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer-left h3 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+}
+
+.footer-left p {
+    color: rgb(120, 120, 120) ;
+    margin-top: 50px;
+    font-size: 1em;
+}
+.footer-left a {
+    color: rgb(120, 120, 120) ;
+    margin-top: 50px;
+    font-size: 1em;
+}
+
+.footer-left .igku:hover {
+    color: white;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+.method-img img {
+    width: 80px;
+}
+
+.footer-center {
+    font-size: 16px;
+    display: grid;
+    margin: 50px;
+    grid-template-areas: "lokasi"
+    "nomor"
+    "email";
+    grid-template-columns: 1fr;
+}
+
+.footer-center h3 {
+    font-size: .9em;
+}
+
+
+.footer-location {
+    display: inline-flex;
+    color: white;
+}
+.footer-nomor {
+    display: inline-flex;
+    color: white;
+}
+.footer-email {
+    display: inline-flex;
+    color: white;
+}
+
+
+.footer-right {
+    color: rgb(103, 103, 103);
+    margin: 40px;
+    font-size: 16px;
+}
+
+.footer-right h3 {
+    font-size:1.4em ;
+    color: rgb(195, 192, 192);
+}
+
+.footer-right p {
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.footer-right a {
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgb(65, 63, 63);
+    border-radius: 50%;
+    background-color: rgb(65, 63, 63);
+    padding: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 5px;
+}
+
+.footer-right a:hover {
+    color: white;
+    background-color: rgb(59, 98, 59);
+}
+
+
+/* ini bagian loading */
+
+.bg-loading {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042104;
+    z-index: 9999;
+    animation: animateBg 2s linear infinite;
+    -webkit-animation: animateBg 2s linear infinite;
+}
+
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+}
+100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+}
+}
+
+.loading {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.loading span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+    -webkit-transform: rotate(calc(18deg * var(--i)));
+    -moz-transform: rotate(calc(18deg * var(--i)));
+    -ms-transform: rotate(calc(18deg * var(--i)));
+    -o-transform: rotate(calc(18deg * var(--i)));
+}
+
+.loading span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,     0 0 20px #00ff0a,    0 0 40px #00ff0a,    0 0 60px #00ff0a,    0 0 80px #00ff0a,    0 0 100px #00ff0a;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(5s * var(--i));
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+
+80%,100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ini bagian responsive */
+
+
+/* ini ukuran hp */
+@media(max-width:768px){
+    /* heading */
+    .heading {
+        background-position: -50px 80px;
+    }
+    /* home */
+    .home {
+        height: max-content;
+    }
+    .home p {
+        font-size: 3vh;
+    }
+    /* profile */
+    .profile {
+        height: 800px;
+    }
+
+    .ikon1 {
+        display: grid;
+        grid-template-areas: "ikon1 ikon2"
+        "ikon3 ikon4";
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .profile .ikon1 col {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 40px;
+    }
+
+    .ikon2 {
+        display: grid;
+        grid-template-areas: "ikon1 ikon2"
+        "ikon3 ikon4";
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .profile .ikon2 col {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row .col .icon {
+        margin-left: 5.5vh ;
+    }
+    /* contact */
+    .contact {
+        height: max-content;
+    }
+
+    .sosmed ul {
+        display: grid;
+        grid-template-areas: "ikon1 ikon2"
+        "ikon3 ikon4" ;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .emaildll {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+
+    /* address */
+    .address .container {
+        display: grid;
+        justify-content: center;
+    }
+
+    .address p {
+        font-size: .7em;
+    }
+
+    .gomap {
+        width: 300px;
+        position: relative;
+        right: 130px;
+
+    }
+
+    /* testimoni */
+    .testimoni {
+        height: max-content;
+    }
+    .testimoni h2 {
+        margin-top: -50px;
+    }
+
+    /* send */
+    .send  {
+        height: max-content;
+        margin-bottom: 50px;
+    }
+    .isisend {
+        margin-top: 10px;
+    }
+
+    /* footer */
+    .footer {
+        height: max-content;
+    }
+    .footer .tulisanfooter {
+        font-size: 20px;
+    }
+    
+/* bagian info panel */
+.info-panel1 {
+    z-index: 999999;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 50px;
+    background-color: white;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    justify-content: center;
+}
+
+.info-panel .icon1 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+}
+
+.info-panel img {
+    width: 100px;
+    text-align: center;
+}
+
+.ikonpanel {
+    position: relative;
+    left: 120px;
+}
+
+.info-panel h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #ACACAC;
+    text-align: center;
+}
+
+}
+
+
+/* ini ukuran tablet */
+@media (min-width:768px) and (max-width:1008px){
+    /* profile */
+    .row .col .icon {
+        margin-left: 5vh ;
+    }
+}
+
+/* ini ukuran laptop keatas */
+@media (min-width:1008px){
+    
+}
+
+
+/* ini ukuran khusus */
+@media (max-width: 400px){
+    .ikon1 col {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:880px){
+    .footer {
+        height: max-content;
+        display: grid;
+        grid-template-areas: "left"
+        "center"
+        "right";
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footer-center {
+        margin-top: 0px;
+    }
+
+    .footer-right {
+        margin-top: 0px;
+    }
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
