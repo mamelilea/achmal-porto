@@ -362,9 +362,15 @@ position: relative;
     font-size: 1.31rem;
   }
 
-  #left {
-    z-index: 1;
-  }
+  .testimoni h3 {
+    text-align: center;
+}
+.testimoni h5 {
+    text-align: center;
+}
+.testimoni p {
+    text-align: center;
+}
 
 
 
@@ -693,6 +699,8 @@ position: relative;
 
     }
 
+    /* memory */
+    
     /* testimoni */
     .testimoni {
         height: max-content;
@@ -830,9 +838,44 @@ position: relative;
         .testimoni{
             padding-top: 120px;
             padding-bottom: 10px;
-            margin-bottom: -100px;
+            margin-bottom: -200px;
         }
+
         
+  .wrapper .carousel{
+    gap: 150px;
+  }
+        
+        .carousel .card {
+            scroll-snap-align: start;
+            height: 300px;
+            width: 80vw;
+            margin-left: 1000px;
+            list-style: none;
+            background: #fff;
+            cursor: pointer;
+            padding-bottom: 15px;
+            flex-direction: column;
+            border-radius: 8px;
+            background-color: #8B53FF;
+          }
+        
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .card .img img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+
     }
 
 
