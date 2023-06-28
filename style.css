@@ -235,36 +235,137 @@ position: relative;
 }
 
 /* ini bagian testimoni */
+/* ini font nya */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Geologica:wght@200&family=Indie+Flower&family=Poppins:wght@400;500;600&display=swap');
+
 .testimoni {
     background-color: white ;
-    height: 500px;
+    height: 600px;
     width: 100%;
-    margin-top: 50px;
-    padding-top: 130px;
+    margin-top: 20px;
+    padding-top: 80px;
     margin-bottom: 130px;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.bagianquotes {
-    font-style: italic;
-}
-.testimoni figure img {
-    width: 60px;
-    margin: 20px 10px;
-    opacity: 0.6;
-}
-.testimoni figure img.utama {
-    width: 100px;
-    opacity: 1;
-    margin-top: 5px;
-}
-.testimoni figure h5 {
-    font-size: 26px;
-    font-weight: bold;
-    font-style: normal;
-}
-.testimoni figure span {
-    font-size: 12px;
-    color: #ACACAC;
-}
+
+  .wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+
+  .wrapper i:first-child{
+    left: -22px;
+  }
+
+  .wrapper i:last-child{
+    right: -22px;
+  }
+
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 400px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #8B53FF;
+  }
+  
+  .carousel .card .img {
+    background: #8B53FF;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 1.31rem;
+  }
+
+  #left {
+    z-index: 1;
+  }
+
 
 
 /* bagian send */
@@ -708,6 +809,30 @@ position: relative;
     }
 
     
+    }
+
+    @media screen and (max-width: 900px) {
+        .wrapper .carousel {
+          grid-auto-columns: calc((100% / 2) - 9px);
+        }
+
+        .testimoni h3 {
+            text-align: center;
+        }
+        .testimoni h5 {
+            text-align: center;
+        }
+        .testimoni p {
+            text-align: center;
+        }
+
+        
+        .testimoni{
+            padding-top: 120px;
+            padding-bottom: 10px;
+            margin-bottom: -100px;
+        }
+        
     }
 
 
